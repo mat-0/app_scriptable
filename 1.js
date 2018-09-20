@@ -1,11 +1,6 @@
-
 let url = "https://lunch.thechels.uk/locations.json"
 let req = new Request(url)
 let json = await req.loadJSON()
+let output = json[Object.keys(json)[Math.floor(Math.random()*Object.keys(json).length)]];
 
-
-function getRandomKeyFromJson(){
-        var obj_keys = Object.keys(data);
-        var ran_key = obj_keys[Math.floor(Math.random() *obj_keys.length)];
-        console.log(ran_key);
-}
+console.log(output)
