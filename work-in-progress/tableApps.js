@@ -1,4 +1,4 @@
-const url = "https://raw.githubusercontent.com/MatBenfield/TheChels.uk/master/_data/apps.json"
+const url = "https://raw.githubusercontent.com/MatBenfield/app_scriptable/data/apps.json"
 let req = new Request(url)
 let json = await req.loadJSON()
 
