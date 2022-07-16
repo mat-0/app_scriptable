@@ -14,27 +14,27 @@ for (line of json) {
     if (i < (count- 1) && count > 0) { t = t + " &\n "}
     return t
     }, "")
-    
+
   let height = 16 + Math.max(count,2) * 22
   row.height = height
-  
+
   const cW = 80
   let c = new DrawContext()
   c.size = new Size(cW, height * 4)
   c.setFillColor(getLineColor(lineName))
   c.fill(new Rect(0, 0 , cW, height * 4))
-  
+
   // ... populate the row with data ...
   let imageCell = row.addImage(c.getImage())
   let titleCell = row.addText(lineName)
   let statusCell = row.addText(str)
-  
+
   // ... format columns and rows ...
   row.cellSpacing = 10
   imageCell.widthWeight = 5
   titleCell.widthWeight = 35
   statusCell.widthWeight = 60
-  
+
   // ... add row to table ...
   table.addRow(row)
 }
