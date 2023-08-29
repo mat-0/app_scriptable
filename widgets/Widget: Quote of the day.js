@@ -1,7 +1,7 @@
 // Variables used by Scriptable.
 // These must be at the very top of the file. Do not edit.
 // icon-color: red; icon-glyph: quote-right;
-const url = "https://raw.githubusercontent.com/MatBenfield/morning.thechels.uk/main/config/quotes.json"
+const url = "https://raw.githubusercontent.com/Mat-0/morning.thechels.uk/main/config/quotes.json"
 let req = new Request(url)
 let json = await req.loadJSON()
 
